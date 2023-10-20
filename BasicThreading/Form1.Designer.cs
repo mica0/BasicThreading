@@ -36,7 +36,7 @@
             // 
             this.lblThread.AutoSize = true;
             this.lblThread.Font = new System.Drawing.Font("Sylfaen", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblThread.Location = new System.Drawing.Point(138, 91);
+            this.lblThread.Location = new System.Drawing.Point(76, 72);
             this.lblThread.Name = "lblThread";
             this.lblThread.Size = new System.Drawing.Size(313, 39);
             this.lblThread.TabIndex = 0;
@@ -44,20 +44,22 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.RosyBrown;
             this.button1.Font = new System.Drawing.Font("Sylfaen", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(249, 175);
+            this.button1.Location = new System.Drawing.Point(187, 156);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(115, 48);
             this.button1.TabIndex = 1;
             this.button1.Text = "Run";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.MistyRose;
+            this.ClientSize = new System.Drawing.Size(492, 257);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblThread);
             this.Name = "Form1";

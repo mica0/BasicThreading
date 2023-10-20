@@ -22,14 +22,19 @@ namespace BasicThreading
         {
             Console.WriteLine("-Before Staring Threading-");
             ThreadStart thread = new ThreadStart(MyThreadClass.Threads);
-            Thread ThreadA = new Thread(thread);
+
             Thread ThreadB = new Thread(thread);
+            Thread ThreadA = new Thread(thread);
+
             ThreadA.Start();
-            ThreadA.Name = "Thread A Process";
             ThreadB.Start();
+
+            ThreadA.Name = "Thread A Process";
             ThreadB.Name = "Thread B Process";
-            ThreadA.Join();
+
+            ThreadA.Join(); 
             ThreadB.Join();
+
             Console.WriteLine("-End of Threading-");
             lblThread.Text = "-End of Threading-";
         }
